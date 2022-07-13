@@ -93,7 +93,10 @@ export default function Navbar(props) {
                 <NextLink href="/posts" passHref>
                   <MenuItem as={Link}>Posts</MenuItem>
                 </NextLink>
-                <NextLink href="https://github.com" passHref>
+                <NextLink
+                  href="https://github.com/chaspatr/portfolio-app"
+                  passHref
+                >
                   <MenuItem as={Link}>View Source</MenuItem>
                 </NextLink>
               </MenuList>
