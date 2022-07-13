@@ -11,6 +11,7 @@ export default function Home() {
           <Heading as="h2" variant="page-title">
             Chase Patrick
           </Heading>
+          <p>Digital Problem Solver ( Developer / Engineer / Designer )</p>
         </Box>
       </Box>
     </Container>
