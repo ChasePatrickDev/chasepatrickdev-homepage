@@ -73,6 +73,33 @@ export default function Navbar(props) {
             Posts
           </LinkItem>
         </Stack>
+
+        <Box flex={1} align="right">
+          <Box ml={2} display={{ base: "inline-block", md: "none" }}>
+            <Menu>
+              <MenuButton
+                as={IconButton}
+                icon={<HamburgerIcon />}
+                variant="outline"
+                aria-label="Options"
+              />
+              <MenuList>
+                <NextLink href="/" passHref>
+                  <MenuItem as={Link}>About</MenuItem>
+                </NextLink>
+                <NextLink href="/works" passHref>
+                  <MenuItem as={Link}>Works</MenuItem>
+                </NextLink>
+                <NextLink href="/posts" passHref>
+                  <MenuItem as={Link}>Posts</MenuItem>
+                </NextLink>
+                <NextLink href="https://github.com" passHref>
+                  <MenuItem as={Link}>View Source</MenuItem>
+                </NextLink>
+              </MenuList>
+            </Menu>
+          </Box>
+        </Box>
       </Container>
     </Box>
   );
