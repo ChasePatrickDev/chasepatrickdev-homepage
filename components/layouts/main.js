@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { Box, Container } from "@chakra-ui/react";
+import Navbar from "../navbar";
 
 export default function Main({ children, router }) {
   return (
@@ -8,6 +9,7 @@ export default function Main({ children, router }) {
         <meta name="viewport" content="width=device-width, intial-scale=1" />
         <title>Chase Patrick - Homepage</title>
       </Head>
+      <Navbar path={router.asPath} />
       <Container maxW="container.md" pt={14}>
         {children}
       </Container>
