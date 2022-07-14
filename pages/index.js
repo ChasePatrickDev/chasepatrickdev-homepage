@@ -1,8 +1,20 @@
-import { Container, Box, Heading } from "@chakra-ui/react";
+import {
+  Container,
+  Box,
+  Heading,
+  Image,
+  useColorModeValue,
+} from "@chakra-ui/react";
+import Section from "../components/section";
 export default function Home() {
   return (
     <Container>
-      <Box borderRadius="lg" bg="red" p={3} align="center">
+      <Box
+        borderRadius="lg"
+        bg={useColorModeValue("whiteAlpha.500", "whiteAlpha.200")}
+        p={3}
+        align="center"
+      >
         Hello, I am a junior front end devloper!
       </Box>
 
@@ -13,7 +25,30 @@ export default function Home() {
           </Heading>
           <p>Digital Problem Solver ( Developer / Engineer / Designer )</p>
         </Box>
+        <Box
+          flexShrink={0}
+          mt={{ base: 4, md: 0 }}
+          ml={{ md: 6 }}
+          align="center"
+        >
+          <Image
+            borderColor="whiteAlpha.800"
+            borderWidth={2}
+            borderStyle="solid"
+            maxWidth="100px"
+            display="inline-block"
+            borderRadius="full"
+            src="/images/chase.jpg"
+            alt="Profile Image"
+          />
+        </Box>
       </Box>
+      <Section delay={0.1}>
+        <Heading as="h3" variant="section-title">
+          Work
+        </Heading>
+        <p>Paragraph</p>
+      </Section>
     </Container>
   );
 }
