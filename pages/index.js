@@ -22,7 +22,7 @@ export default function Home() {
         p={3}
         align="center"
       >
-        Hello, I am a junior front end devloper!
+        Hello, I am a junior software devloper!
       </Box>
 
       <Box display={{ md: "flex" }}>
@@ -110,8 +110,8 @@ export default function Home() {
           Interests
         </Heading>
         <Paragraph>
-          Software Developement, Video Games, Music, Animation, Continued
-          Learning
+          Software Developement, Video Games, Music, Animation, Learning about
+          New Technology
         </Paragraph>
       </Section>
     </Container>
