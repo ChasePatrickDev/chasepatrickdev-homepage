@@ -10,7 +10,7 @@ import Layout from "../components/layouts/article";
 import Section from "../components/section";
 import { WorkGridItem } from "../components/grid-item";
 import thumbNextfire from "../public/images/works/thumbNextfire.png";
-import thumbManagedPowerPortal from "../public/images/works/thumbManagedpowerportal.png";
+import thumbManagedPowerPortal from "../public/images/works/thumbManagedPowerPortal.png";
 
 export default function Works() {
   return (
