@@ -4,7 +4,11 @@ import {
   Heading,
   Image,
   useColorModeValue,
+  List,
+  ListItem,
   Link,
+  SimpleGrid,
+  Icon,
   Button,
 } from "@chakra-ui/react";
 import Section from "../components/section";
@@ -13,6 +17,8 @@ import NextLink from "next/link";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import Layout from "../components/layouts/article";
 import { BioSection, BioYear } from "../components/bio";
+import { IoLogoTwitter, IoLogoGithub, IoLogoLinkedin } from "react-icons/io5";
+import { GridItem } from "../components/grid-item";
 
 export default function Home() {
   return (
@@ -115,6 +121,50 @@ export default function Home() {
             Software Developement, Video Games, Music, Animation, Learning about
             New Technology
           </Paragraph>
+        </Section>
+
+        <Section delay={0.3}>
+          <Heading as="h3" variant="section-title">
+            Socials
+          </Heading>
+          <List>
+            <ListItem>
+              <Link href="https://github.com/ChasePatrickDev" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoGithub} />}
+                >
+                  @ChasePatrickDev
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://twitter.com/ChasePatrickDev" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoTwitter} />}
+                >
+                  @ChasePatrickDev
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link
+                href="https://linkedin.com/in/chase-patrick-"
+                target="_blank"
+              >
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoLinkedin} />}
+                >
+                  @ChasePatrick
+                </Button>
+              </Link>
+            </ListItem>
+          </List>
         </Section>
       </Container>
     </Layout>

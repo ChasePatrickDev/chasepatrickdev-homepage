@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef, useCallback } from "react";
-import { Box, Spinner } from "@chakra-ui/react";
+import { RavenContainer, RavenSpinner } from "./raven-loader";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
-import { loadOBJModel } from "../libs/model";
+import { loadVOXModel } from "../libs/model";
 
 function easeOutCirc(x) {
   return Math.sqrt(1 - Math.pow(x - 1, 4));
@@ -34,7 +34,7 @@ const VoxelRaven = () => {
     }
   }, [renderer]);
 
-  /* eslink-disable react-hooks/exhaustive-deps */
+  /* eslint-disable react-hooks/exhaustive-deps */
   useEffect(() => {
     const { current: container } = refContainer;
     if (container && !renderer) {
@@ -71,10 +71,11 @@ const VoxelRaven = () => {
       controls.autoRotate = true;
       controls.target = target;
       setControls(controls);
+      console.log(scene);
 
-      loadOBJModel(scene, "/voxelraven.vox", {
-        receiveShadow: false,
-        castShadow: false,
+      loadVOXModel(scene, "/voxelraven.vox", {
+        receiveShadow: true,
+        castShadow: true,
       }).then(() => {
         animate();
         setLoading(false);
@@ -104,6 +105,7 @@ const VoxelRaven = () => {
       };
 
       return () => {
+        console.log("unmount");
         cancelAnimationFrame(req);
         renderer.dispose();
       };
@@ -118,27 +120,9 @@ const VoxelRaven = () => {
   }, [renderer, handleWindowResize]);
 
   return (
-    <Box
-      ref={refContainer}
-      className="voxel-raven"
-      m="auto"
-      mt={["-20px", "-60px", "-140px"]}
-      mb={["-40px", "-140px", "-180px"]}
-      w={[280, 480, 640]}
-      h={[280, 480, 640]}
-      position="relative"
-    >
-      {loading && (
-        <Spinner
-          size="xl"
-          position="absolute"
-          left="50%"
-          top="50%"
-          ml="calc(0px - var(--spinner-size) / 2)"
-          mt="calc(0px - var(--spinner-size))"
-        />
-      )}
-    </Box>
+    <RavenContainer ref={refContainer}>
+      {loading && <RavenSpinner />}
+    </RavenContainer>
   );
 };
 
