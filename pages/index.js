@@ -53,7 +53,7 @@ export default function Home() {
               maxWidth="100px"
               display="inline-block"
               borderRadius="full"
-              src="/images/Chase.jpg"
+              src="/images/Chase.JPG"
               alt="Profile Image"
             />
           </Box>
