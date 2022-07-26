@@ -7,7 +7,7 @@ import {
   List,
   ListItem,
   Link,
-  SimpleGrid,
+  //SimpleGrid,
   Icon,
   Button,
 } from "@chakra-ui/react";
@@ -18,7 +18,7 @@ import { ChevronRightIcon } from "@chakra-ui/icons";
 import Layout from "../components/layouts/article";
 import { BioSection, BioYear } from "../components/bio";
 import { IoLogoTwitter, IoLogoGithub, IoLogoLinkedin } from "react-icons/io5";
-import { GridItem } from "../components/grid-item";
+//import { GridItem } from "../components/grid-item";
 
 export default function Home() {
   return (
