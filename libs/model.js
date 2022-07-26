@@ -1,6 +1,6 @@
 import { VOXLoader, VOXMesh } from "three/examples/jsm/loaders/VOXLoader";
 
-export function loadOBJModel(
+export function loadVOXModel(
   scene,
   voxPath,
   options = { receiveShadow: true, castShadow: true }
@@ -13,7 +13,7 @@ export function loadOBJModel(
       voxPath,
       (chunks) => {
         for (let i = 0; i < chunks.length; i++) {
-          console.log(chunks.length);
+          console.log(i);
           const chunk = chunks[i];
 
           const mesh = new VOXMesh(chunk);
@@ -29,6 +29,7 @@ export function loadOBJModel(
       },
       undefined,
       function (error) {
+        console.log(error);
         reject(error);
       }
     );

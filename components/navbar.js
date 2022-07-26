@@ -73,6 +73,9 @@ export default function Navbar(props) {
           <LinkItem href="/posts" path={path}>
             Posts
           </LinkItem>
+          <LinkItem href="https://github.com/ChasePatrickDev/chasepatrickdev-homepage">
+            Source Code
+          </LinkItem>
         </Stack>
 
         <Box flex={1} align="right">
@@ -96,7 +99,7 @@ export default function Navbar(props) {
                   <MenuItem as={Link}>Posts</MenuItem>
                 </NextLink>
                 <NextLink
-                  href="https://github.com/chaspatr/portfolio-app"
+                  href="https://github.com/ChasePatrickDev/chasepatrickdev-homepage"
                   passHref
                 >
                   <MenuItem as={Link}>View Source</MenuItem>
