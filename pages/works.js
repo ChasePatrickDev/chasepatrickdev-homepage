@@ -11,6 +11,7 @@ import Section from "../components/section";
 import { WorkGridItem } from "../components/grid-item";
 import thumbNextfire from "../public/images/works/thumbNextfire.png";
 import thumbManagedPowerPortal from "../public/images/works/thumbManagedPowerPortal.png";
+import thumbPortfolio from "../public/images/works/homepage_01.png";
 
 export default function Works() {
   return (
@@ -30,6 +31,16 @@ export default function Works() {
             >
               A personal blogging site that allows Google Authentication,
               Markdown post editing, image upload, and more
+            </WorkGridItem>
+          </Section>
+          <Section>
+            <WorkGridItem
+              id="portfolio"
+              title="HomePage"
+              thumbnail={thumbPortfolio}
+            >
+              The site you are on right now! This is a portfolio site that I
+              built to showcase my skills and previous works as a developer.
             </WorkGridItem>
           </Section>
           <Section>

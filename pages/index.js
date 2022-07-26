@@ -63,10 +63,10 @@ export default function Home() {
             Work
           </Heading>
           <Paragraph>
-            My name is Chase and I a Software Developer and Engineer based in
+            My name is Chase and I am a Software Developer and Engineer based in
             Indianapolis with a passion for problem solving and building
-            solutions.the opportunity with Kenzie Academy to build my web
-            development skills as well as my current role with Circle K that
+            solutions. Thanks to the opportunity with Kenzie Academy to build my
+            web development skills as well as my current role with Circle K that
             allows me to elevate my development to full-stack with .Net
             development. My goal is to use my adaptability and problem-solving
             as a software developer and engineer. My most recent project is{" "}
