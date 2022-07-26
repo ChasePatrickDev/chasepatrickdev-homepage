@@ -18,7 +18,7 @@ export default function Works() {
           {/* to add additional examples use format below including Section component */}
           <Section>
             <WorkGridItem
-              id="NextFire"
+              id="nextfire"
               title="NextFire"
               thumbnail={thumbNextfire}
             >
@@ -28,7 +28,7 @@ export default function Works() {
           </Section>
           <Section>
             <WorkGridItem
-              id="ManagedPowerPortal"
+              id="managedpowerportal"
               title="ManagedPowerPortal"
               thumbnail={thumbManagedPowerPortal}
             >
