@@ -73,9 +73,6 @@ export default function Navbar(props) {
           <LinkItem href="/posts" path={path}>
             Posts
           </LinkItem>
-          <LinkItem href="https://github.com/ChasePatrickDev/chasepatrickdev-homepage">
-            Source Code
-          </LinkItem>
         </Stack>
 
         <Box flex={1} align="right">
