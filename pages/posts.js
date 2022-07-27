@@ -4,6 +4,7 @@ import Section from "../components/section";
 import { GridItem } from "../components/grid-item";
 
 import siteIsLaunched from "../public/images/works/nextfire_01.png";
+import homePageisLaunched from "../public/images/works/homepagePost.png";
 
 const Posts = () => (
   <Layout title="Posts">
@@ -17,6 +18,11 @@ const Posts = () => (
             title="NextFire launch post"
             thumbnail={siteIsLaunched}
             href="https://nextfire-ebon.vercel.app/chasepatrick117/site-is-launched"
+          ></GridItem>
+          <GridItem
+            title="Homepage launch post"
+            thumbnail={homePageisLaunched}
+            href="https://nextfire-ebon.vercel.app/chasepatrickdev/portfolio-site-has-launched"
           ></GridItem>
         </SimpleGrid>
       </Section>
