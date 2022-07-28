@@ -63,13 +63,14 @@ export default function Home() {
             Work
           </Heading>
           <Paragraph>
-            My name is Chase and I am a Software Developer and Engineer based in
+            My name is Chase and I am a Software Developer/Engineer based in
             Indianapolis with a passion for problem solving and building
-            solutions. Thanks to the opportunity with Kenzie Academy to build my
-            web development skills as well as my current role with Circle K that
-            allows me to elevate my development to full-stack with .Net
-            development. My goal is to use my adaptability and problem-solving
-            as a software developer and engineer. My most recent project is{" "}
+            solutions. Thanks to the opportunity with Kenzie Academy, I was able
+            to build my my knowledge in web developement. My current role with
+            Circle K that allows me to elevate my development to full-stack with
+            .Net development. My goal is to take this experience, along with my
+            adaptability and problem-solving skills, to grow my career. My most
+            recent project is{" "}
             <NextLink href="/works/nextfire">
               <Link>NextFire</Link>
             </NextLink>
@@ -90,7 +91,7 @@ export default function Home() {
           </Heading>
           <BioSection>
             <BioYear>1996</BioYear>
-            Born in Bedford, IN
+            Born in Bloomington, IN
           </BioSection>
           <BioSection>
             <BioYear>2018</BioYear>
@@ -103,12 +104,12 @@ export default function Home() {
           </BioSection>
           <BioSection>
             <BioYear>2021</BioYear>
-            Began working at Circlek (Contracted through Beacon Hill) as a
+            Began working at CircleK (Contracted through Beacon Hill) as a
             Junior Full-Stack Software Developer
           </BioSection>
           <BioSection>
             <BioYear>2022</BioYear>
-            Hired on as a full-time employee at Circlek as a Junior Full-Stack
+            Hired on as a full-time employee at CircleK as a Junior Full-Stack
             Software Developer
           </BioSection>
         </Section>
