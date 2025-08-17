@@ -30,7 +30,7 @@ export default function Home() {
           p={3}
           align="center"
         >
-          Hello, I am a junior software devloper!
+          Hello, I am a Software Developer and Engineer based in Indianapolis,!
         </Box>
 
         <Box display={{ md: "flex" }}>
@@ -38,7 +38,7 @@ export default function Home() {
             <Heading as="h2" variant="page-title">
               Chase Patrick
             </Heading>
-            <p>Digital Problem Solver ( Developer / Engineer / Designer )</p>
+            <p>Digital Problem Solver ( Developer / Engineer )</p>
           </Box>
           <Box
             flexShrink={0}
@@ -66,13 +66,13 @@ export default function Home() {
             My name is Chase and I am a Software Developer/Engineer based in
             Indianapolis with a passion for problem solving and building
             solutions. Thanks to the opportunity with Kenzie Academy, I was able
-            to build my my knowledge in web developement. My current role with
-            Circle K that allows me to elevate my development to full-stack with
-            .Net development. My goal is to take this experience, along with my
-            adaptability and problem-solving skills, to grow my career. My most
-            recent project is{" "}
-            <NextLink href="/works/nextfire">
-              <Link>NextFire</Link>
+            to build my my knowledge in web development. My roles as a support developer
+            at Circle K and full stack developer at ACE Rent-A-Car have allowed me to elevate my
+            development to full-stack with .Net development. My goal is to take this experience,
+            along with my adaptability and problem-solving skills, to continue to elevate my career.
+            My current project that I am actively developing is{" "}
+            <NextLink href="/works/lumier">
+              <Link>Lumier</Link>
             </NextLink>
             .
           </Paragraph>
@@ -99,18 +99,19 @@ export default function Home() {
           </BioSection>
           <BioSection>
             <BioYear>2020</BioYear>
-            Completed the Associate Front-end Developement training program at
+            Completed the Associate Front-end Development training program at
             Kenzie Academy and began further self-taught education
           </BioSection>
           <BioSection>
             <BioYear>2021</BioYear>
-            Began working at CircleK (Contracted through Beacon Hill) as a
-            Junior Full-Stack Software Developer
+            Began working at CircleK as a Support Developer, assisting in maintaining
+            and troubleshooting internal
+            applications
           </BioSection>
           <BioSection>
             <BioYear>2022</BioYear>
-            Hired on as a full-time employee at CircleK as a Junior Full-Stack
-            Software Developer
+            Hired on at ACE Rent A Car as a Software Developer, working on
+            Armada, a pricing engine and analysis tool for the car rental industry.
           </BioSection>
         </Section>
 
@@ -119,7 +120,7 @@ export default function Home() {
             Interests
           </Heading>
           <Paragraph>
-            Software Developement, Video Games, Music, Animation, Learning about
+            Software Development, Video Games, Music, Animation, Learning about
             New Technology
           </Paragraph>
         </Section>

@@ -54,6 +54,14 @@ export default function Works() {
               global health montoring, device registration, and more
             </WorkGridItem>
           </Section>
+          <Section>
+            <WorkGridItem
+              id="lumier"
+              title="Lumier"
+            >
+              A stock/crypto trading agent that will take strategies configured and run them on a live market.
+            </WorkGridItem>
+          </Section>
         </SimpleGrid>
       </Container>
     </Layout>
